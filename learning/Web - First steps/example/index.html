@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator Example</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+<body>
+    <main>
+        <div class="calculator">
+            <div class="calculator-display">
+                <span class="calculator-result"></span>
+            </div>
+            <div class="calculator-fields">
+                <div class="calculator-field-col">
+                    <div onclick="addNumber(7)" class="calculator-field">7</div>
+                    <div onclick="addNumber(4)" class="calculator-field">4</div>
+                    <div onclick="addNumber(1)" class="calculator-field">1</div>
+                    <div onclick="negate()" class="calculator-field">+/-</div>
+                </div>
+                <div class="calculator-field-col">
+                    <div onclick="addNumber(8)" class="calculator-field">8</div>
+                    <div onclick="addNumber(5)" class="calculator-field">5</div>
+                    <div onclick="addNumber(2)" class="calculator-field">2</div>
+                    <div onclick="addNumber(0)" class="calculator-field">0</div>
+                </div>
+                <div class="calculator-field-col">
+                    <div onclick="addNumber(9)" class="calculator-field">9</div>
+                    <div onclick="addNumber(6)" class="calculator-field">6</div>
+                    <div onclick="addNumber(3)" class="calculator-field">3</div>
+                    <div onclick="addDecimalPlaces()" class="calculator-field">.</div>
+                </div>
+                <div class="calculator-field-col">
+                    <div onclick="addOperator('/')" class="calculator-field darker">/</div>
+                    <div onclick="addOperator('*')" class="calculator-field darker">*</div>
+                    <div onclick="addOperator('-')" class="calculator-field darker">-</div>
+                    <div onclick="addOperator('+')" class="calculator-field darker">+</div>
+                </div>
+            </div>
+            <div class="calculator-controls">
+                <div onclick="calculate()" class="calculator-control darker">=</div>
+                <div onclick="undo()" class="calculator-control darker">undo</div>
+                <div onclick="reset()" class="calculator-control darker">reset</div>
+            </div>
+
+        </div>
+    </main>
+</body>
+<script src="index.js"></script>
+</html>
