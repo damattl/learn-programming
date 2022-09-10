@@ -42,7 +42,7 @@ There create the following files:
 <link rel="stylesheet" href="PATH_TO_CSS_FILE">
 
 <!-- Import JS file -->
-<script src="PATH_TO_JS_FILE" type="text/javascript">
+<script src="PATH_TO_JS_FILE" type="text/javascript"></script>
 
 <!-- Use an image -->
 <img src="PATH_TO_IMAGE">
